@@ -7,8 +7,11 @@
 		<th><h2>Content</h2></th>
 	</tr>
 	<tr *ngFor='let x of emails'>
-		<td>{{x.email}}</td>
-		<td>{{x.Importance}}</td>
+		<td>{{x.email | lowercase}}</td>
+		<td>
+			<p *ngIf='x.Importance'> High</p>
+			<p *ngIf='!x.Importance'> Low</p>
+		</td>
 		<td>{{x.Subject}}</td>
 		<td>{{x.Content}}</td>
 	</tr>
