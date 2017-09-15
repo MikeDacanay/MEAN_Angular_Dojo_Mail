@@ -6,8 +6,10 @@ import { Component } from '@angular/core';
 	styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-title = 'Dojo Mail';
-emails = [
-{'email':"bill@gates.com"},{'email':"hello@gmail.com"},{'email':"hello@gmail.com"},{'email':"hello@gmail.com"}
-];
+	title = 'Dojo Mail';
+	emails = [
+		{'email':"bill@gates.com", 'Importance':'High', 'Subject':'Python', 'Content':'aodsfjapsjdof'},
+		{'email':"ping@gmail.com", 'Importance':'Medium', 'Subject':'Javscript', 'Content':'asdfasdfasdwhatever'},
+		{'email':"pong@gmail.com", 'Importance':'Okish', 'Subject':'Kobal', 'Content':'4joti4843535'}
+	];
 }
